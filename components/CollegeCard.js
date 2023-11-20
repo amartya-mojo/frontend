@@ -93,7 +93,7 @@ const CollegeCard = ({ college }) => {
           {filteredStudentData.map((student) => {
             return (
               <StudentCard
-                id={student?.attributes?.studentId}
+                key={student?.attributes?.studentId}
                 studentData={student.attributes}
               />
             );
